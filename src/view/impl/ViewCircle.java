@@ -1,0 +1,36 @@
+package view.impl;
+
+
+import view.ViewShape;
+
+/**
+ * Класс представления параметров круга в консоли, наследник интерфейса ShapeView
+ */
+public class ViewCircle implements ViewShape{
+    /**
+     * Метод для вывода площади круга в консоль
+     *
+     * @param area площадь круга
+     */
+    @Override
+    public void showArea(double area) {
+        System.out.println("Площадь круга: " + area);
+    }
+
+    /**
+     * Метод для вывода периметра круга в консоль
+     *
+     * @param perimeter периметр круга
+     */
+    @Override
+    public void showPerimeter(double perimeter) {
+        System.out.println("Периметр круга: " + perimeter);
+    }
+
+    /**
+     * Метод для вывода ошибки некорректного значения радиуса круга
+     */
+    public void showRadiusError() {
+    System.out.println("Ошибка! некорректное значение радиуса круга! Радиус должен быть положительным числом.");
+    }
+}
